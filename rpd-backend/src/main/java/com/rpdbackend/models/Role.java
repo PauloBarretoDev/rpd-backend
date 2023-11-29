@@ -10,7 +10,7 @@ public class Role {
     private Long id;
     private String name;
     @OneToMany(mappedBy = "role")
-    private List<User> users;
+    private List<Agent> agents;
 
     public Long getId() {
         return id;

@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-public class User {
+public class Agent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -13,13 +13,15 @@ public class User {
     private int age;
     @OneToOne
     @JoinColumn(name = "address_id")
-    private Address adress;
-    @OneToMany
+    private Address address;
+    @OneToOne
     @JoinColumn(name = "phone_id")
-    private List<Phone> phones;
+    private Phone phone;
     @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
+    @OneToMany(mappedBy = "agent")
+    private List<Mission> missions;
 
     public Long getId() {
         return id;

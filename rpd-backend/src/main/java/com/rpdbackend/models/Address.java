@@ -8,9 +8,8 @@ public class Address {
     private String street;
     private int number;
     private String city;
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @OneToOne(mappedBy = "address")
+    private Agent agent;
 
     public Long getId() {
         return id;
