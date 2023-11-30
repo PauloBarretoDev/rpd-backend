@@ -41,15 +41,24 @@ public class BiologicalWeapon {
         return height;
     }
 
+    public BioWeaponType getBioWeaponType() {
+        return bioWeaponType;
+    }
+
     public void setHeight(double height) {
         this.height = height;
     }
 
-    public boolean isContained() {
+    public boolean getContained() {
         return contained;
     }
 
     public void setContained(boolean contained) {
         this.contained = contained;
     }
+
+    public void setBioWeaponType(BioWeaponType bioWeaponType) {
+        this.bioWeaponType = bioWeaponType;
+    }
+
 }
