@@ -43,4 +43,12 @@ public class Mission {
     public void setAcomplished(boolean acomplished) {
         this.acomplished = acomplished;
     }
+
+    public Agent getAgent() {
+        return agent;
+    }
+
+    public void setAgent(Agent agent) {
+        this.agent = agent;
+    }
 }

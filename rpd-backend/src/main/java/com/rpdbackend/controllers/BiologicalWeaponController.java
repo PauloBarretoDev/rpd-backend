@@ -33,7 +33,7 @@ public class BiologicalWeaponController {
         return repository.findAll();
     }
 
-    @GetMapping("/agent/key={id}")
+    @GetMapping("/bioWeapon/key={id}")
     public BiologicalWeapon getBioWeaponById(@PathVariable Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(
