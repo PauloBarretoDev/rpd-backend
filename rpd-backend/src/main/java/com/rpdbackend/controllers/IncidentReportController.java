@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/incidents")
-@CrossOrigin
 public class IncidentReportController {
 
     @Autowired
