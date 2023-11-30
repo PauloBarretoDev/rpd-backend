@@ -1,7 +1,6 @@
 package com.rpdbackend.controllers;
 
 import com.rpdbackend.models.Phone;
-import com.rpdbackend.models.Role;
 import com.rpdbackend.repositories.PhoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
